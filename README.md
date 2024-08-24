@@ -1,62 +1,44 @@
 # My Anime List
+Este é o repositório do projeto **My Anime List**, desenvolvido como parte do trabalho final da disciplina de Programação Web. O projeto foi criado utilizando Angular e Firebase e consome a API do Jikan (MyAnimeList) para permitir que os usuários criem e gerenciem suas listas personalizadas de animes e mangás.
 
-## Descrição
+---
 
-"My Anime List" é uma aplicação web desenvolvida em Angular que permite aos usuários criar e gerenciar uma lista personalizada de animes e mangás que estão acompanhando. Os usuários podem adicionar novos títulos, atualizar o status (por exemplo, marcar como "assistido" ou "em andamento"), e remover itens da lista.
+## Descrição do Projeto
 
-Este projeto foi criado como parte do trabalho final da disciplina de Programação Web no curso de Sistemas de Informação.
+O **My Anime List** permite que os usuários autentiquem-se no sistema, consumam dados da API do Jikan para buscar animes e mangás, e gerenciem suas listas personalizadas. Os usuários podem adicionar novos títulos à lista, atualizar o status (por exemplo, marcar como "assistido" ou "em andamento"), e remover itens conforme necessário.
+
+---
 
 ## Funcionalidades
 
-- **Autenticação de Usuários**: O sistema permite que os usuários façam login e criem novas contas utilizando o Firebase Authentication.
-- **CRUD de Animes/Mangás**: Os usuários podem adicionar, editar, e remover animes e mangás da sua lista personalizada.
-- **Consumo da Jikan API**: A aplicação consome dados da Jikan API para fornecer informações detalhadas sobre os animes e mangás.
-- **Proteção de Rotas**: Algumas rotas são protegidas, garantindo que apenas usuários autenticados possam acessar certas áreas do sistema.
-- **Pipeline Personalizado**: Um pipe personalizado é utilizado para destacar o status dos animes/mangás na lista.
-  
-## Tecnologias Utilizadas
+- **Autenticação de Usuários**:
+  - Login e criação de contas utilizando Firebase Authentication (email/senha).
 
-- Angular
-- Firebase Authentication
-- Firestore (para armazenamento dos dados)
-- Jikan API
-- HTML/CSS
-- TypeScript
+- **Consumo da API do Jikan**:
+  - Integração com a API do Jikan para busca e exibição de informações sobre animes e mangás.
 
-## Pré-requisitos
+- **CRUD de Animes/Mangás**:
+  - Permite que os usuários adicionem, editem, atualizem e removam itens da sua lista de animes e mangás.
+
+- **Proteção de Rotas**:
+  - Implementação de guards para garantir que apenas usuários autenticados possam acessar certas áreas da aplicação.
+
+- **Pipe Personalizado**:
+  - Criação de um Pipe para transformar os títulos dos animes/mangás na exibição.
+
+---
+
+## Requisitos
 
 - Node.js
 - Angular CLI
+- Firebase
 
-## Instalação
+---
 
-1. Clone este repositório para a sua máquina local:
+## Como Rodar o Projeto
+
+1. **Clone o Repositório**
 
    ```bash
-   git clone [URL do Repositório]
-Navegue até o diretório do projeto:
-
-bash
-Copiar código
-cd my-anime-list
-Instale as dependências:
-
-bash
-Copiar código
-npm install
-Comandos Disponíveis
-Compilar e recarregar automaticamente para desenvolvimento:
-
-bash
-Copiar código
-npm run serve
-Hospedar no GitHub Pages:
-
-bash
-Copiar código
-npm run deploy
-API
-Este projeto utiliza a Jikan API para obter dados sobre animes e mangás.
-
-Contribuições
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+   git clone https://github.com/Azogh/my-anime-list.git
