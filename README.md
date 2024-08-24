@@ -1,27 +1,44 @@
-# SalaDeAula
+# My Anime List
+Este é o repositório do projeto **My Anime List**, desenvolvido como parte do trabalho final da disciplina de Programação Web. O projeto foi criado utilizando Angular e Firebase e consome a API do Jikan (MyAnimeList) para permitir que os usuários criem e gerenciem suas listas personalizadas de animes e mangás.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+---
 
-## Development server
+## Descrição do Projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O **My Anime List** permite que os usuários autentiquem-se no sistema, consumam dados da API do Jikan para buscar animes e mangás, e gerenciem suas listas personalizadas. Os usuários podem adicionar novos títulos à lista, atualizar o status (por exemplo, marcar como "assistido" ou "em andamento"), e remover itens conforme necessário.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Funcionalidades
 
-## Build
+- **Autenticação de Usuários**:
+  - Login e criação de contas utilizando Firebase Authentication (email/senha).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Consumo da API do Jikan**:
+  - Integração com a API do Jikan para busca e exibição de informações sobre animes e mangás.
 
-## Running unit tests
+- **CRUD de Animes/Mangás**:
+  - Permite que os usuários adicionem, editem, atualizem e removam itens da sua lista de animes e mangás.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Proteção de Rotas**:
+  - Implementação de guards para garantir que apenas usuários autenticados possam acessar certas áreas da aplicação.
 
-## Running end-to-end tests
+- **Pipe Personalizado**:
+  - Criação de um Pipe para transformar os títulos dos animes/mangás na exibição.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## Requisitos
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Node.js
+- Angular CLI
+- Firebase
+
+---
+
+## Como Rodar o Projeto
+
+1. **Clone o Repositório**
+
+   ```bash
+   git clone https://github.com/Azogh/my-anime-list.git
